@@ -40,7 +40,7 @@ class WhatsAppAPI:
         return requests.post(url, data=json.dumps(payload), headers=headers)
 
     def readMessage(self):
-        url = f"{self.base_url}/queue"
+        url = f"{self.base_url}/chats"
         headers = {
             'client-token': self.client_token
         }
